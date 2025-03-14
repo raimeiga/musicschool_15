@@ -1,0 +1,24 @@
+.content div {
+  width: 100%;
+}
+.content div h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #dc143c;
+}
+.content div p {
+  font-size: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.content-img-area {
+  width: 100%;
+  background: rgba(220, 20, 60, 0.2);
+}/*# sourceMappingURL=style.css.map */
