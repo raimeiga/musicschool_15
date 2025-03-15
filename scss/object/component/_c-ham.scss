@@ -1,0 +1,53 @@
+@use '../../foundation/mixin'as *;
+@use '../../foundation/variable'as *;
+
+
+.c-ham {
+ background-color: $color-red;
+ width: 7.1rem;
+ height: 5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.c-ham__inner {
+ width: 3.2rem;
+ height: 2.8rem;
+ position: relative;
+}
+
+.c-ham__inner span {
+ background-color: #fff;
+ width: 100%;
+ height: 0.4rem;
+ border-radius: 1rem;
+ position: absolute;
+ left: 0;
+ transition: all .4s;
+}
+
+.c-ham__inner span:nth-of-type(1) {
+  top: 0;
+}
+
+.c-ham__inner span:nth-of-type(2) {
+ top: 1.2rem;
+}
+
+.c-ham__inner span:nth-of-type(3) {
+ top: 2.4rem;
+}
+
+.c-ham.active .c-ham__inner span:nth-of-type(1) {
+ top: 1.2rem;
+ transform: rotate(45deg);
+}
+.c-ham.active .c-ham__inner span:nth-of-type(2) {
+ display: none;
+}
+.c-ham.active .c-ham__inner span:nth-of-type(3) {
+ top: 1.2rem;
+ transform: rotate(-45deg);
+}
+

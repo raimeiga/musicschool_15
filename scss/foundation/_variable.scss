@@ -1,0 +1,19 @@
+//$color
+$color-red: #bc0000;
+
+//vw関数
+@function vw($pixelSize, $baseWidth:1080) {
+  @return calc($pixelSize / $baseWidth * 100vw);
+}
+
+// $pixelSizeにfont-sizeの拡大最大値を入れると、その値以上に拡大しない
+// この関数だと、width:940px;のときに$pixelSizeが10pxとか22pxとかって代入の仕方になる
+@function hvw($pixelSize) {
+ @return min(calc($pixelSize / 940 * 100vw), $pixelSize * 1px);
+}
+
+// $pixelSizeにfont-sizeの拡大最大値を入れると、その値以上に拡大しない
+// この関数だと、width:1080px;のときに$pixelSizeが10pxとか22pxとかって代入の仕方になる
+@function hvw1080($pixelSize) {
+ @return min(calc($pixelSize / 1080 * 100vw), $pixelSize * 1px);
+}

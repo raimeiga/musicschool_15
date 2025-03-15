@@ -1,0 +1,7 @@
+@use '../../foundation/mixin'as *;
+@use '../../foundation/variable'as *;
+
+
+.u-bg-red {
+ background-color: $color-red;
+}
